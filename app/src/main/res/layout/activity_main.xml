@@ -1,18 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.innershows.jsenginespeedtest.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java调用JavaScript时间对比："
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jscore_call_js"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callJs"
+            android:text="JSCore处理" />
+
+        <Button
+            android:id="@+id/v8_call_js"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callJs"
+            android:text="J2V8处理" />
+
+        <Button
+            android:id="@+id/rhino_call_js"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callJs"
+            android:text="Rhino处理" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jscore_call_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callJava"
+            android:text="JSCore处理" />
+
+        <Button
+            android:id="@+id/v8_call_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callJava"
+            android:text="J2V8处理" />
+
+        <Button
+            android:id="@+id/rhino_call_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callJava"
+            android:text="Rhino处理" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

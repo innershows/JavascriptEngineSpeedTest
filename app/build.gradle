@@ -29,6 +29,6 @@ dependencies {
     //JSCore
     compile 'com.github.ericwlange:AndroidJSCore:3.0.1'
     //J2V8
-    //compile 'com.eclipsesource.j2v8:j2v8:4.6.0@aar'
+    compile 'com.eclipsesource.j2v8:j2v8:4.6.0@aar'
     testCompile 'junit:junit:4.12'
 }
