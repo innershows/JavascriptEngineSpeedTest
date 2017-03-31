@@ -16,7 +16,7 @@
     - 优点：Mozilla开发的开源JS引擎，使用Java开发，对Java支持最好。
     - 缺点：在Dalvik少了一些特性。
  - Nashorn
-    - 缺点：JDK对Mozilla的替代，不支持Dalvik。
+    - 缺点：JDK对Rhino的替代，不支持Dalvik。
 
 
 *本Demo只对 JavaScriptCore、V8 和 Rhino 做性能测试。*
